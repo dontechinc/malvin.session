@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Malvin_King,    useMultiFileAuthState,
+    default: Don_techinc,    useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
     Browsers
@@ -19,13 +19,13 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function MALVIN_KING_PAIR_CODE() {
+        async function No_Name_PAIR_CODE() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Malvin_King = Malvin_King({
+            let Pair_Code_By_Don_techinc = Don_techinc({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -34,16 +34,16 @@ router.get('/', async (req, res) => {
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
                 browser: ["Chrome (Linux)", "", ""]
              });
-             if(!Pair_Code_By_Malvin_King.authState.creds.registered) {
+             if(!Pair_Code_By_Don_techinc.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_Malvin_King.requestPairingCode(num)
+                            const code = await Pair_Code_By_Don_techinc.requestPairingCode(num)
                  if(!res.headersSent){
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Malvin_King.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Malvin_King.ev.on("connection.update", async (s) => {
+            Pair_Code_By_Don_techinc.ev.on('creds.update', saveCreds)
+            Pair_Code_By_Don_techinc.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -55,29 +55,29 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Malvin_King.sendMessage(Pair_Code_By_Malvin_King.user.id, { text: '' + b64data });
 
-               let MALVIN_KING_TEXT = `
+               let Don_techinc_TEXT = `
 ┏━━━━━━━━━━━━━━
-┃ᴍᴀʟᴠɪɴ-ᴍᴅ SESSION IS 
+┃GHOST_DL 🐛 BOT SESSION IS 
 ┃SUCCESSFULLY
 ┃CONNECTED ✅🔥
 ┗━━━━━━━━━━━━━━━
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘⚡ ᴍᴀʟᴠɪɴ-ᴋɪɴɢ ⚡𖥘
+❶ || Creator = 𖥘⚡ Don techinc ⚡𖥘
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || https://whatsapp.com/channel/0029Vac8SosLY6d7CAFndv3Z
+❷ || https://whatsapp.com/channel/0029VajvAYL7YScvdKu2dA1r
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❸ || Owner = https://wa.me/263780166288
+❸ || Owner = https://wa.me/256704376077
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❺ || Bot Repo = https://github.com/kingmalvn/LORD-MD 
+❺ || Bot Repo = https://github.com/dontechinc/GHOST_DL-BOT-md/ 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❻ || YouTube = https://www.youtube.com/@malvintech2 
+❻ || YouTube = https://www.youtube.com/@dontechin_sink 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ©2024-2099 ᴍᴀʟᴠɪɴ-ᴋɪɴɢ_`
- await Pair_Code_By_Malvin_King.sendMessage(Pair_Code_By_Malvin_King.user.id,{text:MALVIN_KING_TEXT},{quoted:session})
+ await Pair_Code_By_Don_techinc.sendMessage(Pair_Code_By_Don_techinc.user.id,{text:MALVIN_KING_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Malvin_King.ws.close();
+        await Pair_Code_By_Don_techinc.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
@@ -92,6 +92,6 @@ router.get('/', async (req, res) => {
          }
         }
     }
-    return await MALVIN_KING_PAIR_CODE()
+    return await Don_techinc_PAIR_CODE()
 });
 module.exports = router
