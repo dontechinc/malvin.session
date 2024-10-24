@@ -34,7 +34,7 @@ router.get('/', async (req, res) => {
 			saveCreds
 		} = await useMultiFileAuthState('./temp/' + id)
 		try {
-			let Qr_Code_By_Malvin_King = Malvin_King({
+			let Qr_Code_By_Don_techinc = Malvin_King({
 				auth: state,
 				printQRInTerminal: false,
 				logger: pino({
@@ -60,7 +60,7 @@ router.get('/', async (req, res) => {
 	
 				   let MALVIN_KING_TEXT = `
 ┏━━━━━━━━━━━━━━
-  GHOST_DL 🐛 BOT SESSION IS 
+|FI BOT MD SESSION IS 
 ┃SUCCESSFULLY
 ┃CONNECTED ✅🔥
 ┗━━━━━━━━━━━━━━━
@@ -71,11 +71,11 @@ router.get('/', async (req, res) => {
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❸ || Owner = https://wa.256704376077
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❺ || Bot Repo = https://github.com/dontechinc/GHOST_DL-BOT-md/
+❺ || Bot Repo = https://github.com/dontechinc/FI-BOT-MD
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❻ || YouTube = https://www.youtube.com/@dontechinc_sinking
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©2024-2099 Zik tech_`
+©2024-2099 dontechin©®™_`
 	 await Qr_Code_By_No_Name.sendMessage(Qr_Code_By_Malvin_King.user.id,{text:MALVIN_KING_TEXT},{quoted:session})
 
 
