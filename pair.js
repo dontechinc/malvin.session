@@ -57,7 +57,7 @@ router.get('/', async (req, res) => {
 
                let Don_techinc_TEXT = `
 ┏━━━━━━━━━━━━━━
-┃GHOST_DL 🐛 BOT SESSION IS 
+┃FI BOT MD SESSION IS 
 ┃SUCCESSFULLY
 ┃CONNECTED ✅🔥
 ┗━━━━━━━━━━━━━━━
@@ -68,11 +68,11 @@ router.get('/', async (req, res) => {
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❸ || Owner = https://wa.me/256704376077
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❺ || Bot Repo = https://github.com/dontechinc/GHOST_DL-BOT-md/ 
+❺ || Bot Repo = https://github.com/dontechinc/FI-BOT-MD 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❻ || YouTube = https://www.youtube.com/@dontechin_sink 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©2024-2099 ᴍᴀʟᴠɪɴ-ᴋɪɴɢ_`
+©2024-2099 dontechin©®_`
  await Pair_Code_By_Don_techinc.sendMessage(Pair_Code_By_Don_techinc.user.id,{text:MALVIN_KING_TEXT},{quoted:session})
  
 
